@@ -1,0 +1,11 @@
+@mixin link($hbgc, $bgc: #000, $hc: #000, $ptb: 10px, $plr: 16px) {
+  display: inline-block;
+  text-decoration: none;
+  padding: $ptb $plr;
+  background-color: $bgc;
+  color: #fff;
+  &:hover {
+    background-color: $hbgc;
+    color: $hc;
+  }
+}

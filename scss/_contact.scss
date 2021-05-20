@@ -1,0 +1,82 @@
+#contact {
+  background-color: #f1f1f1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact {
+  &__title {
+    padding-bottom: 10px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 165px;
+      height: 8px;
+      background-color: $cyan;
+    }
+  }
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__address {
+    margin-bottom: 30px;
+    i {
+      margin-right: 15px;
+      font-size: 24px;
+      color: $cyan;
+    }
+  }
+  &__form {
+    box-shadow: 0px 4px 8px #ccc;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+  }
+}
+
+.form {
+  &__item {
+    margin-bottom: 30px;
+    label, input {
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__checkbox {
+    position: relative;
+    padding-left: 30px;
+  }
+  &__checkbox input {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+  }
+  &__btn {
+    @include link($ccc);
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 601px) {
+  #contact {
+    grid-template-columns: 1fr;
+  }
+}

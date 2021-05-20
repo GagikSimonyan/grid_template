@@ -1,0 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+#team, #work, #pricing, #contact {
+  padding: 64px 20px;
+  h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+
+
+
+
